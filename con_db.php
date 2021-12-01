@@ -1,0 +1,16 @@
+<?php
+//$conex = mysqli_connect("localhost","root","","db_registro_civil");
+//function conectar(){
+    $host="localhost";
+    $user="root";
+    $pass="";
+    $bd="db_registro_civil";
+
+    $con=mysqli_connect($host,$user,$pass);
+
+    mysqli_select_db($con,$bd);
+
+    return $con;
+//};
+
+?>
